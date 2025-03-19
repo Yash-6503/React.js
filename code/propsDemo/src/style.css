@@ -1,0 +1,188 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px 40px;
+    background: radial-gradient(circle at right center, #563277, #4a378c 30%, #4172c2 55%, #32517380);
+}
+
+/* .container {
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to bottom, #4A00E0, #FF66B2);
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+} */
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* .box{
+    text-align: center;
+    border-radius: 15px;
+    background: linear-gradient(blue, violet);
+    transition: transform 0.3s ease-in-out; 
+}*/
+
+.box {
+    text-align: center;
+    border-radius: 15px;
+    background: linear-gradient(blue, violet);
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeIn 0.8s ease-in-out 0.5s forwards;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    /* Added transition for smooth hover effect */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8); /* Glowing cyan shadow */
+}
+
+
+img{
+    border-radius: 15px;
+    width: 250px;
+    aspect-ratio: 1/1;
+    object-fit:contain;
+    
+}
+
+.header {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    backdrop-filter: blur(5px);
+    /* Apply blur effect */
+    color: white;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+button{
+    /* width: 150px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor:pointer;
+    background: linear-gradient(); */
+    background: #fff;
+    outline: none;
+    border: none;
+    margin: 8px 10px;
+        padding: 10px 18px;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover{
+    background: #222;
+        color: #fff;
+}
+
+h4{
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            /* White text for better contrast */
+            text-transform: uppercase;
+            /* Makes text all caps */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            /* Soft shadow for depth */
+            letter-spacing: 1px;
+            /* Slight spacing for readability */
+            padding: 10px;
+            font-family: 'Poppins', sans-serif;
+            /* Modern font */
+
+}
+
+h1{
+    font-size: 22px;
+        font-weight: bold;
+        color: #fff;
+        /* White text for better contrast */
+        text-transform: uppercase;
+        /* Makes text all caps */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        /* Soft shadow for depth */
+        letter-spacing: 1px;
+        /* Slight spacing for readability */
+        padding: 10px;
+        font-family: 'Poppins', sans-serif;
+}
+
+.message-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    background: white;
+    /* Background color */
+    padding: 10px 0;
+    position: relative;
+}
+
+.scrolling-text {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    /* text-shadow: 2px 2px 5px red; */
+    animation: scrollText 10s linear infinite;
+    /* Infinite animation */
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .scrolling-text {
+        animation: scrollTextReverse 10s linear infinite;
+    }
+
+    @keyframes scrollTextReverse {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}
