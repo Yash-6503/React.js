@@ -23,7 +23,7 @@ function Card() {
 
   return (
     <div>
-      <div className="box1 sm:w-auto">
+      <div className="box1 sm:w-auto text-">
         <div className="image">
           <img src="dev.jpg" alt="" />
         </div>
@@ -33,8 +33,8 @@ function Card() {
           {/* <p className='para'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ex fugiat totam cumque officia ducimus aliquam natus nihil neque mollitia?</p> */}
         </div>
 
-        <p className='fs-5 fw-semibold text-center'>Social Links</p>
-        <div className="social d-flex fs-3 justify-content-around align-items-center">
+        <p className='fs-5 fw-semibold text-center '>Social Links</p>
+        <div className="social d-flex fs-3 justify-content-around align-items-center text-white">
           <div className="linkedin">
             <i class="bi bi-linkedin"></i>
           </div>
@@ -59,7 +59,7 @@ function Card() {
         <p className='fs-5 fw-semibold text-center'>Social Reactions</p>
         <div className="reactions d-flex fs-2 justify-content-around">
           <div className="like">
-            <button className='position-relative' onClick={handleLikes}>
+            <button className='position-relative' style={{ backgroundColor: 'blue' }} onClick={handleLikes}>
               <i class="bi bi-heart-fill"></i>
               <span className='position-absolute top-10 ms-2 start-100 translate-middle badge rounded-pill text-bg-danger fs-6'>+{likes}</span>
             </button>
@@ -67,14 +67,14 @@ function Card() {
           </div>
 
           <div className="dislike">
-            <button className='position-relative' onClick={handleDislike}>
+            <button className='position-relative' style={{ backgroundColor: 'blue' }} onClick={handleDislike}>
               <i class="bi bi-hand-thumbs-down-fill"></i>
               <span className='position-absolute top-10 ms-2 start-100 translate-middle badge rounded-pill text-bg-danger fs-6'>+{dislikes}</span>
             </button>
           </div>
 
           <div className="share">
-            <button className='position-relative' onClick={handleShare}>
+            <button className='position-relative' style={{ backgroundColor: 'blue' }} onClick={handleShare}>
               <i class="bi bi-send-fill"></i>
               <span className='position-absolute top-10 ms-2 start-100 translate-middle badge rounded-pill text-bg-danger fs-6'>+{share}</span>
             </button>

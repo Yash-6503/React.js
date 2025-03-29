@@ -1,12 +1,14 @@
 .box1{
     width: 400px;
-    margin: 5% auto;    
+    margin: 0px auto;
     border: 2px solid grey;
     padding: 10px;
     display: flex;
     flex-direction: column;
+    
     /* justify-content: space-around;
     align-items: center; */
+    background: linear-gradient(violet, blue);
 }
 
 .image>img{
@@ -46,4 +48,16 @@ button{
     outline: none;
     border: none;
     background-color: white;
+}
+i {
+    cursor: pointer;
+
+}
+
+.main {
+    background: linear-gradient(to bottom, grey, white);
+    /* background-color: black; */
+    /* background: radial-gradient(#4172c2 55%, #32517380); */
+    padding: 5% 0%;
+
 }
