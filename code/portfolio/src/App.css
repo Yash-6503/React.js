@@ -1,0 +1,45 @@
+
+@import "tailwindcss";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 15px 10px;
+    font-size: 18px;
+    font-weight: bold;
+   
+}
+
+Link{
+    color: white;
+    text-decoration: none;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.box{
+    padding : 20px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+button{
+    padding: 3px 10px;
+    cursor: pointer;
+}

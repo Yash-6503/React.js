@@ -1,0 +1,21 @@
+button:hover{
+    box-shadow: 0px 0px 10px grey;
+    color: darkslategray;
+}
+
+button{
+    outline: none;
+}
+
+.key:hover{
+    box-shadow: 0px 5px 20px darkslategray;
+
+}
+
+.key{
+    background:linear-gradient(grey,white,grey);
+     text-align: center;
+      width: 200px;
+       border-radius: 10px;
+      
+}
