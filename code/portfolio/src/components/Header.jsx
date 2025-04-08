@@ -16,7 +16,7 @@ function Header() {
 
   return (
     <div>
-      <nav className="flex justify-between p-4 items-center bg-gray-800 text-white">
+      <nav className="flex-col sm:flex-row justify-between p-4 items-center bg-gray-800 text-white">
         <div className="flex gap-4">
           <Link to="/" style={{ textDecoration: 'none' }}>Home</Link>
           <Link to="/about" style={{ textDecoration: 'none' }}>About</Link>
