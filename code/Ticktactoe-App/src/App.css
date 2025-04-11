@@ -1,0 +1,105 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/tictactoe.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 30px;
+}
+
+#heading {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 3px 3px 5px black, 5px 5px 2px blue, 3px 3px 1px navy;
+
+}
+
+.game-board {
+  height: 350px;
+  width: 350px;
+  background-color: rgba(195, 123, 168, 0.537);
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  column-gap: 15px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  box-shadow: 8px 8px 5px rgb(230, 224, 224);
+}
+
+#result {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+
+.cell {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: rgb(66, 38, 159);
+  font-weight: 700;
+}
+
+
+#restart-btn {
+  height: 48px;
+  width: fit-content;
+  background-color: white;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: black;
+  border: none;
+  padding: 0 10px 0 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+
+@keyframes burst {
+  0% {
+    transform: scale(1);
+    background-color: rgba(0, 247, 255, 0.815);
+    box-shadow: 0 0 10px yellow;
+  }
+
+  50% {
+    transform: scale(1.2);
+    background-color: lavenderblush;
+    box-shadow: 0 0 20px rgba(212, 141, 210, 0.819);
+  }
+
+  100% {
+    transform: scale(1);
+    background-color: rgba(255, 0, 89, 0.822);
+    box-shadow: 0 0 10px red;
+  }
+}
+
+.winner {
+  height: 80px;
+  width: 80px;
+  background-color: white;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: rgb(66, 38, 159);
+  font-weight: 700;
+  animation: burst 1.6s ease-in-out infinite;
+}
