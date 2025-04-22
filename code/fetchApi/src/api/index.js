@@ -22,4 +22,18 @@ export const getUserById = async (id) => {
     return await resp.json();
 }
 
+export const getProductById = async (id) => {
+    const resp = await fetch(`https://fakestoreapi.com/products/${id}`, {
+        method: "GET",
+    });
 
+    return await resp.json();
+}
+
+
+export const getProducts = async () => {
+    const res = await fetch("https://fakestoreapi.com/products", {
+        method: "GET",
+    });
+    return await res.json();
+}

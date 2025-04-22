@@ -18,7 +18,7 @@ function Posts() {
                   <table className="min-w-full bg-white rounded shadow-md">
                       <thead>
                           <tr className="bg-gray-200 text-gray-700 uppercase text-sm leading-normal">
-                              <th className="py-3 px-6 text-left">Id</th>
+                              <th className="py-3 px-3 sm:px-6 text-left">Id</th>
                               <th className="py-3 px-6 text-left">Title</th>
                               <th className="py-3 px-6 text-left">Body</th>
                           </tr>
@@ -27,7 +27,7 @@ function Posts() {
                           {data && data.length > 0 ? (
                               data.map((e, i) => (
                                   <tr key={i} className="border-b border-gray-200 hover:bg-gray-100">
-                                      <td className="py-3 px-6 text-left">{e.id}</td>
+                                      <td className="py-3 px-3 sm:px-6 text-left">{e.id}</td>
                                       <td className="py-3 px-6 text-left">{e.title}</td>
                                       <td className="py-3 px-6 text-left">{e.body}</td>
                                   </tr>
